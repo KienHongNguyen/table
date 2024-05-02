@@ -9,28 +9,36 @@
   <body>
     <h1>Planets data</h1>
     <table>
+        <caption>
+          Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+        </caption>
+        <colgroup>
+          <col span="2">
+          <col style="border: 2px solid black">
+          <col span="9">
+        </colgroup>
         <thead>
             <!-- Header -->
             <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Mass</th>
-                <th>Diameter</th>
-                <th>Density</th>
-                <th>Gravity</th>
-                <th>Length of day (hours)</th>
-                <th>Distance form Sun</th>
-                <th>Mean temperature</th>
-                <th>Number of moons</th>
-                <th>Notes</th>
+                <td colspan="2"></td>
+                <th scope="col">Name</th>
+                <th scope="col">Mass</th>
+                <th scope="col">Diameter</th>
+                <th scope="col">Density</th>
+                <th scope="col">Gravity</th>
+                <th scope="col">Length of day (hours)</th>
+                <th scope="col">Distance form Sun</th>
+                <th scope="col">Mean temperature</th>
+                <th scope="col">Number of moons</th>
+                <th scope="col">Notes</th>
             </tr>
         </thead>
         <tbody>
             <!-- Terrestrial Planets -->
             <!-- Mercury -->
             <tr>
-              <td rowspan="4">Terrestrial planets</td>
-              <td>Mercury</td>
+              <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
+              <th scope="row">Mercury</th>
               <td>0.330</td>
               <td>4,879</td>
               <td>5427</td>
@@ -43,7 +51,7 @@
             </tr>
             <!-- Venus -->
             <tr> 
-              <td>Venus</td>
+              <th>Venus</th>
               <td>4.87</td>
               <td>12,104</td>
               <td>5243</td>
@@ -56,7 +64,7 @@
             </tr>
             <!-- Earth -->
             <tr>
-              <td>Earth</td>
+              <th>Earth</th>
               <td>5.79</td>
               <td>12,756</td>
               <td>5514</td>
@@ -69,7 +77,7 @@
             </tr>
             <!-- Mars -->
             <tr>
-                <td>Mars</td>
+                <th>Mars</th>
                 <td>0.642</td>
                 <td>6,792</td>
                 <td>3933</td>
@@ -84,88 +92,76 @@
             <!-- Jovian Planets -->
             <!-- Jupiter -->
             <tr>
-                <td rowspan="4">
-                    <table>
-                        <tr>
-                            <td rowspan="2">Jovian planets</td>
-                            <td>Gas giants</td>
-                        </tr>
-                        <tr>
-                            <td>Ice giants</td>
-                        </tr>
-                    </table>
-                </td>
-                
-                <td>Jupiter</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th rowspan="4" scope="rowgroup">Jovian planets</th>
+                <th rowspan="2" scope="rowgroup">Gas giants</th>   
+                <th scope="row">Jupiter</th>
+                <td>1898</td>
+                <td>142,984</td>
+                <td>1326</td>
+                <td>23.1</td>
+                <td>9.9</td>
+                <td>778.6</td>
+                <td>-110</td>
+                <td>67</td>
+                <td>The largest planet</td>
             </tr>
             <!-- Saturn -->
             <tr>
-                <td>Saturn</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th>Saturn</th>
+                <td>568</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+                <td>10.7</td>
+                <td>1433.5</td>
+                <td>-140</td>
+                <td>62</td>
                 <td></td>
             </tr>
             <!-- Uranus -->
             <tr>
-                <td>Uranus</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th rowspan="2" scope="rowgroup">Ice giants</th>
+                <th>Uranus</th>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
                 <td></td>
             </tr>
             <!-- Neptune -->
             <tr>
-                <td>Neptune</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th>Neptune</th>
+                <td>102</td>
+                <td>49,528</td>
+                <td>1638</td>
+                <td>11.0</td>
+                <td>16.1</td>
+                <td>4495.1</td>
+                <td>-200</td>
+                <td>14</td>
                 <td></td>
             </tr>
 
             <!-- Dwarf Planets -->
             <!-- Pluto -->
             <tr>
-                <td>Dward planets</td>
-                <td>Pluto</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th scope="row" colspan="2">Dward planets</th>
+                <th scope="row">Pluto</th>
+                <td>0.0146</td>
+                <td>2,370</td>
+                <td>2095</td>
+                <td>0.7</td>
+                <td>153.3</td>
+                <td>5906.4</td>
+                <td>-225</td>
+                <td>5</td>
+                <td>Declassified as a planet in 2006, but this <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
             </tr>
-          </tbody>
+        </tbody>
     </table>
 
   </body>
